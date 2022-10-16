@@ -61,7 +61,7 @@ pipeline {
         }
 
         stage('ArgoCD Sync') {
-            environment {
+            /*environment {
                 ARGOCD_API_TOKEN = credentials('argocd-api-token')
             }
             steps {
@@ -73,7 +73,7 @@ pipeline {
                         https://192.168.56.200/api/v1/applications/guestbook/sync
                 '''
             }
-        }
+        }*/
     }
 }
 
